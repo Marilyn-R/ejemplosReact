@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 import './App.css';
-import task from './example/taks.json';
+import tasks from './example/tasks.json';
 import Tasks from './components/Tasks';
+import Taskform from './components/Taskform';
 
 class App extends Component{
   state ={
-    task: task
+    tasks: tasks
   }
 render (){
   return <div>
-  <Tasks  task={this.state.task}/>
+    <Taskform/>
+  <Tasks  tasks={this.state.tasks}/>
   </div>
  }
 }
