@@ -44,7 +44,7 @@ class App extends Component{
           return <div>
             <Router>
             
-              <h1>REACT ROUTER</h1> 
+              <h1>Algunas caracteriticas que tiene REACT ROUTER</h1> 
             <Link to= "/">HOME</Link>
               <br/>
               <br/>
