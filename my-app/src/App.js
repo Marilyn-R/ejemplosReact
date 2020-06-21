@@ -17,13 +17,18 @@ class Hello extends React.Component{
     show: true
   }
 
+toogleShow = () => {
+  this.setState({show: false})
+}
+
+
   render (){
     if (this.state.show){
     return (
     <div id= "hello"> 
     <h3>{this.props.subtitle}</h3>
     {this.props.mytext}
-    <button onClick= {() => this.setState({show: false})}>Toogle</button>
+    <button onClick= {() => this.toogle}>Toogle</button>
   
 </div>
     )
