@@ -18,7 +18,7 @@ class Hello extends React.Component{
   }
 
 toogle = () => {
-  this.setState({show: false})
+  this.setState({show: !this.state.show})
 }
 
 
@@ -28,12 +28,14 @@ toogle = () => {
     <div id= "hello"> 
     <h3>{this.props.subtitle}</h3>
     {this.props.mytext}
-    <button onClick= { this.toogle}>Toogle</button>
+    <button onClick= { this.toogle}>Seguir</button>
   
 </div>
     )
   } else{
-    return <h1>no hay nada</h1>
+    return <h1>no hay nada
+      <button onClick= {this.toogle} > Dejar de seguir</button>
+    </h1>
   }
 }
 }
@@ -42,7 +44,7 @@ toogle = () => {
 function App() {
   return (
    <div>
-     hj  <Hello mytext="Holi" subtitle="lorem ispum"/> <Hello mytext="holaa" subtitle="lorem ispum"/> <Hello mytext="holas"subtitle="lorem ispum"/></div>
+     hj  <Hello mytext="Holi " subtitle="lorem ispum "/> <Hello mytext="holaa " subtitle="lorem ispum "/> <Hello mytext="holas "subtitle="lorem ispum "/></div>
   );
 }
 
