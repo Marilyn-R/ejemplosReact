@@ -26,7 +26,10 @@ render(){
 
 
     return(
+        
         <form onSubmit={this.onSubmit}>
+            <center>
+            <h1>Para agregar una tarea escribela y da en guardar</h1>
             <input type= "text "
             name="title"
             placeholder ="write a task" 
@@ -36,9 +39,13 @@ render(){
             <br/>
             <textarea name="description" placeholder="description" 
             onChange={this.onChange} 
-            value={this.state.description}></textarea>
+            value={this.state.description}></textarea><br/><br/>
             <button type="submit"> Save</button>
+            <h1>Tus tareas</h1>
+            <h3>Puedes eliminar, decir que las hiciste y agregar nuevas </h3>
+            </center>
         </form>
+        
     )
 }
 
