@@ -20,9 +20,12 @@ class Hello extends React.Component{
   render (){
     if (this.state.show){
     return (
-    <div id= "hello"> {this.props.mytext}
-  <h3>{this.props.subtitle}</h3>
-Compo</div>
+    <div id= "hello"> 
+    <h3>{this.props.subtitle}</h3>
+    {this.props.mytext}
+    <button onClick= {() => this.setState({show: false})}>Toogle</button>
+  
+</div>
     )
   } else{
     return <h1>no hay nada</h1>
