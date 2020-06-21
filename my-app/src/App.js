@@ -17,7 +17,7 @@ class Hello extends React.Component{
     show: true
   }
 
-toogleShow = () => {
+toogle = () => {
   this.setState({show: false})
 }
 
@@ -28,7 +28,7 @@ toogleShow = () => {
     <div id= "hello"> 
     <h3>{this.props.subtitle}</h3>
     {this.props.mytext}
-    <button onClick= {() => this.toogle}>Toogle</button>
+    <button onClick= { this.toogle}>Toogle</button>
   
 </div>
     )
